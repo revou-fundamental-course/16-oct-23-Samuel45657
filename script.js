@@ -1,17 +1,20 @@
-function validateForm(){
-    const nama = document.forms('message-form')['name-input'].value
-
-    if(name ==''){
-        document.getElementById('error-name').innerHTML = "Nama tidak boleh kosong!"
-        
-        return false
-    }
-    document.getElementById("name").innerHTML = "";
-
-    return false;
+function home(){
+    location.replace("https://revou.co/")
 }
-function setName(name){
-    document.getElementById("name").innerHTML = name;
-    document.getElementById('error-name').innerHTML = ""
-
+function profile(){
+    location.replace("https://revou.co/alumni")
+}
+function portofolio(){
+    location.replace("https://journal.revou.co/tag/portofolio/")
+}
+function message(){
+    const element= document.getElementById("message");
+    element.scrollIntoView();
+}
+function validateForm(){
+    let x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Form tidak lengkap!");
+        return false;
+    }
 }
